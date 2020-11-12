@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "https://diestrocorleone.github.io/quark-css/quark.css">
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lato">
+	<script src = "control.js"></script>		
+	<title>Rock Paper Scissors | Home</title>
+	<style type="text/css">
+		.font-Lato{
+			font-family: Lato;
+		}
+
+		button img{
+			width: 4rem;
+			height: auto;
+		}
+	</style>
+</head>
+<body class="font-Lato">
+	<div class="row col-full center no-margin bg-red font-white padded text-c">
+			<h1>ROCK-PAPER-SCISSORS!</h1>
+			<h2>Play. You know you want to.</h2>
+	</div>
+	<div class="row col-full padded">
+		<div class="col-third no-margin padded bg-red font-white">
+			<div class="row col-full">
+			<div class="col-half" id="botones">
+				<h4>Your choice:</h4>
+				<button class="btn-white" onclick="play(1)"><img src="img/rock.png"></button><br><br>
+				<button class="btn-white" onclick="play(2)"><img src="img/paper.png"></button><br><br>
+				<button class="btn-white" onclick="play(3)"><img src="img/scissors.png"></button>
+			</div>	
+			<div class="col-half text-r">
+				<h4>CPU choice:</h4>
+				<button class="btn-white">
+				<p id="paragraphCpuChoice" class=" font-red font-Lato">Waiting...</p>
+				<img id="imgCpuChoice">
+				</button>
+			</div>	
+		</div>	
+		<p id="paragraph" class="font-white text-c"></p>
+		</div>
+	</div>
+	<footer class = "row col-full bg-red padded text-c font-white font-Lato" id = "footer">		
+		<p>Coded by Diestro Corleone.</p><br><p><a href = "mailto:matias.perez.mcd@gmail.com">E-mail me!</a></p>
+	</footer>	
+</body>
+</html>
